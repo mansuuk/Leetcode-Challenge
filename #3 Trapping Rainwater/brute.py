@@ -1,17 +1,9 @@
 def trapRain(arr):
-    i = 0
-    fullVol = 0
-    j=0
-    while i < len(arr)-1:
-        if arr[i]==0:
-            i+=1
-        
-        else:
-            j = i+1
-            currVol = 0
-            while arr[j]<arr[i]:
-                currVol += arr[i]-arr[j]
-            fullVol += currVol
-            j += 1
-        i=j
-    return fullVol
+    water = 0
+    for i in range(len(arr)-1):
+        maxL = max(arr[:i] if arr[:i] else [0])
+        maxR = max(arr[i+1:] if arr[i+1:] else [0])
+        waterAti = min(maxL, maxR) - arr[i]
+        if waterAti>0:
+            water += waterAti
+    return water

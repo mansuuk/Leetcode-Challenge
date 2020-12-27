@@ -12,6 +12,8 @@ This repository contains 30 coding challenges covering various DSA concepts and 
 
 3. Trapping Rainwater: https://leetcode.com/problems/trapping-rain-water/
     	-Water at each index can be found in isolation.
-	-Water at i = min(maxL, maxR) - arr[i]. maxL = max(arr[:i]); maxR = max(arr[i+1:]).
+	-Water at i = min(maxL, maxR) - arr[i]. maxL = max(arr[:i]); maxR = max(arr[i+1:]). (brute force)
+	-Use two pointers at the start and the end resp, move the minimum pointer. Thses pointers are used to store the max value seen from either sides.
+	-When a pointer is moved it stores the water holding capacity at that index.
   
  
