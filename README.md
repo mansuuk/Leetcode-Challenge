@@ -18,5 +18,8 @@ This repository contains 30 coding challenges covering various DSA concepts and 
 
 4. Backspace String Compare: https://leetcode.com/problems/backspace-string-compare/
 	-Use Stack.
+
+5. Longest substring without repeating characters: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+	-Use sliding window with a hashmap(set)
   
  
