@@ -21,5 +21,11 @@ This repository contains 30 coding challenges covering various DSA concepts and 
 
 5. Longest substring without repeating characters: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 	-Use sliding window with a hashmap(set)
+
+6. Valid Palindrome: https://leetcode.com/problems/valid-palindrome/
+
+6.1 Valid Palindrome 2: https://leetcode.com/problems/valid-palindrome-ii/
+	-Use two converging pointers.
+	-replace characters both at right and left index in different passes and verify if resulting string is a palindrome.
   
  
